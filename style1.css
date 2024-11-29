@@ -1,0 +1,419 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #e6d1f4;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #8900e4;
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-image: url('ava.png');
+  background-size: cover;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.group-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.last-name {
+  font-size: 16px;
+  color: #666;
+}
+
+.welcome {
+  padding: 10px;
+}
+
+.head-welcome {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-text {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.mini_head {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.navigation {
+  width: 400px; /* adjust the width as needed */
+  padding: 50px;
+  overflow-y: auto;
+}
+
+.avatar {
+  border-radius: 5%;
+  width: 100%; /* Убедитесь, что ширина 100% */
+  height: auto; /* Высота автоматическая для сохранения пропорций */
+  float: right;
+}
+
+.container {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 250px 1fr; /* два столбца равной ширины */
+  gap: 20px; /* расстояние между элементами */
+  height: auto; /* адаптированная выта */
+}
+
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.vid {
+  border-radius: 5%;
+  width: 100%; /* Убедитесь, что видеоплеер занимает 100% ширины */
+  height: auto; /* Высота автоматическая */
+  border-radius: 5%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  background-color: #e6d1f4; /* same background color as the body */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #8900e4;
+  color: #fff;
+}
+
+nav a:active {
+  background-color: #6600cc;
+  color: #fff;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  margin-bottom: 10px;
+}
+
+.navigation li + li {
+  margin-top: 20px; /* add margin between buttons */
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #000;
+  background-color: #e6d1f4; /* same background color as the body */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navigation a:hover {
+  background-color: #8900e4;
+  color: #fff;
+}
+
+.navigation a:active {
+  background-color: #6600cc;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4, h5, h6 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #666;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+nav {
+  border-bottom: 1px solid #ccc;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 24px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5 { font-size: 14px; }
+h6 { font-size: 12px; }
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Pacifico', cursive;
+}
+
+.group-name {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+}
+
+.last-name {
+  font-size: 16px;
+  font-style: italic;
+  font-family: 'Pacifico', cursive;
+}
+
+.welcome .head-welcome {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+.cards h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Pacifico', cursive;
+}
+
+.main-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.footer p {
+  font-size: 14px;
+  font-style: italic;
+  font-family: 'Pacifico', cursive;
+}
+
+.nav-link-bold {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+}
+
+nav ul li a {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+tbody tr:hover {
+  background-color: #f5c4f2; /* or any other color you prefer */
+  cursor: pointer; /* optional, to change the cursor shape on hover */
+}
+
+tbody tr td.checkbox:hover {
+  background-color: #f5c4f2;
+}
+
+tbody tr:hover td:nth-child(2) { /* highlight the second column */
+  background-color: #f5c4f2;
+}
+
+.avatar {
+  box-shadow: 0 0 10px rgba(33, 2, 2, 0.2);
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+  body {
+    margin: 10px;
+  }
+
+  .container {
+    grid-template-columns: 1fr; /* Один столбец для мобильных */
+  }
+
+  .navigation {
+    width: 100%; /* Ширина навигации на 100% */
+    padding: 20px; /* Уменьшение отступов */
+  }
+
+  .avatar {
+    width: 100%; /* Ширина аватара на 100% */
+    height: auto; /* Автоматическая высота */
+  }
+
+  .vid {
+    width: 100%; /* Видеоплеер на 100% */
+    height: auto; /* Автоматическая высота */
+  }
+
+  nav ul {
+    flex-direction: column; /* Вертикальное расположение пунктов навигации */
+    align-items: center; /* Центрирование */
+  }
+
+  nav li {
+    margin: 10px 0; /* Уменьшение отступов между пунктами */
+  }
+
+  .main-text {
+    font-size: 18px; /* Увеличение шрифта для удобства чтения */
+  }
+
+  .head-welcome {
+    font-size: 26px; /* Увеличение размера заголовка */
+  }
+
+  p {
+    font-size: 18px; /* Увеличение размера текста абзацев */
+  }
+
+  h1 {
+    font-size: 38px; /* Увеличение заголовка H1 */
+  }
+
+  h2 {
+    font-size: 26px; /* Увеличение заголовка H2 */
+  }
+
+  h3 {
+    font-size: 20px; /* Увеличение заголовка H3 */
+  }
+}
+
+
+
+@media (max-width: 820px) {
+  .avatar {
+    width: 100%; /* Заполнение ширины экрана */
+  }
+
+  .vid {
+    width: 100%; /* Видеоплеер на 100% */
+  }
+
+  .welcome {
+    padding: 10px; /* Уменьшение отступов для лучшего отображения */
+  }
+  .main-text {
+    font-size: 18px; /* Увеличение шрифта для удобства чтения */
+  }
+
+  .head-welcome {
+    font-size: 26px; /* Увеличение размера заголовка */
+  }
+
+  p {
+    font-size: 18px; /* Увеличение размера текста абзацев */
+  }
+
+  h1 {
+    font-size: 38px; /* Увеличение заголовка H1 */
+  }
+
+  h2 {
+    font-size: 26px; /* Увеличение заголовка H2 */
+  }
+
+  h3 {
+    font-size: 20px; /* Увеличение заголовка H3 */
+  }
+}
+
+@media (min-width: 821px) {
+  .avatar {
+    max-width: 400px; /* Максимальная ширина 400 пикселей */
+  }
+  .vid{
+    max-width: 400px;
+  }
+}
+
+.avatar {
+  transition: transform 0.3s; /* Плавный переход для трансформации */
+}
+
+.avatar {
+  transition: transform 0.5s ease; /* Плавный переход */
+}
+
+.avatar.rotate {
+  transform: rotate(360deg); /* Вращение на 360 градусов */
+}

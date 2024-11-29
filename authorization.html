@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разработка веб-приложения</title>
+    <link rel="stylesheet" href="style_auth.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+            transition: color 0.5s ease;
+        }
+
+        .success {
+            color: green;
+        }
+
+        /* Пример стилей для формы */
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .submit-btn {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Разработка веб-приложения</h1>
+        <p>Заполните форму и мы обязательно свяжемся с вами в ближайшее время для уточнения деталей</p>
+        <form>
+            <div class="form-group">
+                <label for="name">Как вас зовут</label>
+                <input id="name" placeholder="например Иванов Иван Иванович" type="text" required/>
+            </div>
+            <div class="form-group">
+                <label for="email">Ваш e-mail</label>
+                <input id="email" placeholder="test@mail.ru" type="email" required/>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон</label>
+                <input id="phone" placeholder="+7 919 999 99 99" type="tel" required/>
+            </div>
+            <div class="form-group">
+                <label for="country">Страна</label>
+                <select id="country" required>
+                    <option>Россия</option>
+                    <option>США</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Дата</label>
+                <div class="date-container">
+                    <input id="date" placeholder=" / / " type="text" required/>
+                    <img alt="Календарь" height="20" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-XWBII0FQDocueOMMRW3pbwhn.png?st=2024-09-13T05%3A43%3A02Z&amp;se=2024-09-13T07%3A43%3A02Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-12T23%3A17%3A14Z&amp;ske=2024-09-13T23%3A17%3A14Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=n9l/rtUFDD1UEKBugjyes/5BMUMXFm9S6UyzHhFkL1Q%3D" width="20"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comment">Комментарий</label>
+                <textarea id="comment" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="checkbox-label">
+                    <input id="consent" type="checkbox" required/>
+                    <label for="consent">Согласен на обработку моих персональных данных</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <button class="submit-btn" type="submit">Отправить заявку</ button>
+            </div>
+            <div id="message" class="hidden"></div> <!-- Элемент для сообщения -->
+        </form>
+    </div>
+    <script src="auth_3.js"></script>
+    <!-- <script src="auth_js.js"></script> -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector("form");
+            const messageDiv = document.getElementById("message");
+
+            form.addEventListener("submit", function(event) {
+                event.preventDefault(); // Предотвращаем стандартное поведение формы
+
+                // Отображаем сообщение
+                messageDiv.textContent = "Форма отправлена!";
+                messageDiv.classList.remove("hidden");
+                messageDiv.classList.add("visible", "success");
+
+                // Убираем сообщение через 3 секунды
+                setTimeout(() => {
+                    messageDiv.classList.remove("visible");
+                    messageDiv.classList.add("hidden");
+                }, 3000);
+            });
+        });
+    </script>
+</body>
+</html>
